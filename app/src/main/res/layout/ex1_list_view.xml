@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:id="@+id/search_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:text="@string/search_postal_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:labelFor="@id/edit_search"/>
+        <EditText
+            android:id="@+id/edit_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text"/>
+
+        <ImageButton
+            android:id="@+id/search_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:layout_margin="8dp"
+            android:contentDescription="@string/search_button"
+            android:background="@color/colorAccent"
+            android:src="@drawable/ic_action_name"/>
+
+        <ImageButton
+            android:id="@+id/refresh_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:layout_margin="8dp"
+            android:contentDescription="@string/refresh_button"
+            android:background="@color/colorAccent"
+            android:src="@drawable/ic_reset_name"
+            />
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:layout_below="@id/search_list">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/search_result"
+        style="@style/listStyle"
+        android:padding="16dp"
+        android:lineSpacingExtra="4dp"
+        android:textSize="16sp"
+        android:layout_below="@id/search_list"
+        android:visibility="gone"/>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Amaris</string>
+
+    <string name="hello_blank_fragment">Incomplet Test</string>
+    <string name="category_first">First</string>
+    <string name="category_second">Second</string>
+    <string name="category_third">Third</string>
+    <string name="category_fourth">Fourth</string>
+    <string name="search_postal_code">Search Postal Code:</string>
+    <string name="no_result">No Result Matches the Search Value</string>
+    <string name="task_2">Task 2</string>
+    <string name="search_button">Search</string>
+    <string name="refresh_button">Refresh</string>
+</resources>
